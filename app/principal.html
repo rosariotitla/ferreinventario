@@ -1,0 +1,10 @@
+<body>
+<h1>{{title}}</h1>
+    <h3>Lista de Productos</h3>
+    <ul class="heroes">
+           <li *ngFor="#em of empleados" (click)="onSelect(em)">
+       <span class="badge">{{em.id}}</span>  {{em.name}}
+      </li>
+    </ul>
+    <my-empleado-detail [emp]="selectedEmpleado"></my-empleado-detail>
+  </body>
